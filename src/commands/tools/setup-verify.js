@@ -28,9 +28,9 @@ module.exports = {
             });
             const channelv = client.channels.cache.get('1076611802982518834');
             const embed = new EmbedBuilder()
-                .setColor("#0099ff")
+                .setColor("#00ff00")
                 .setTitle("Gaming Kingdom | Verify")
-                .setDescription('vítám tě, pro ověření klikni na tlačítko.')
+                .setDescription('Vítám tě, pro ověření klikni na tlačítko.')
                 .setFooter({
                     text: 'Gaming Kingdom ©2023'
                 });
@@ -49,7 +49,9 @@ module.exports = {
             const buttonCollector = await channelv.createMessageComponentCollector();
             buttonCollector.on('collect', async (y) => {
                 const role = interaction.guild.roles.cache.get('1075499612787458149');
+                const rolez = interaction.guild.roles.cache.get('1075495286035726467');
                 await y.member.roles.add(role);
+                await y.member.roles.add(rolez);
                 return y.reply({
                     ephemeral: true,
                     content: "úspěšně ověřen.",

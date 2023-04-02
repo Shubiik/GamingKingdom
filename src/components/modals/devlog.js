@@ -10,7 +10,7 @@ module.exports = {
         const channelg = client.channels.cache.get('1076190392015388722');
         const devlog = interaction.fields.getTextInputValue('devlogInput');
         const embed = new EmbedBuilder()
-            .setColor('Blue')
+            .setColor('#ba55d3')
             .setTitle(`**🛠 Dev-Log 🛠**`)
             .addFields({
                 name: " ",

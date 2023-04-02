@@ -28,7 +28,7 @@ module.exports = {
             });
             const channeli = client.channels.cache.get('1089186915955265618');
             const embed = new EmbedBuilder()
-                .setColor("#0099ff")
+                .setColor("#ff7f50")
                 .setTitle("Gaming Kingdom | Oznámení")
                 .setDescription('Pro získávání stálých oznámení klikni pro získání role.')
                 .setFooter({

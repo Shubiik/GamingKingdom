@@ -10,7 +10,7 @@ module.exports = {
         const channelg = client.channels.cache.get('1075496840914534510');
         const devlog = interaction.fields.getTextInputValue('oznInput');
         const embed = new EmbedBuilder()
-            .setColor('Blue')
+            .setColor('#ff7f50')
             .setTitle(`**📢 Oznámení 📢**`)
             .addFields({
                 name: " ",
