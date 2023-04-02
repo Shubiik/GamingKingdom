@@ -6,8 +6,8 @@ const {
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName("tadd")
-        .setDescription("ticket add user")
+        .setName("tremove")
+        .setDescription("ticket remove user")
         .addUserOption((option) =>
             option
             .setName("hrac")
@@ -28,11 +28,11 @@ module.exports = {
             const channel = interaction.channel;
             const member = interaction.options.getMember("hrac")
             channel.permissionOverwrites.edit(member.user.id, {
-                ViewChannel: true,
-                SendMessages: true,
+                ViewChannel: false,
+                SendMessages: false,
             });
             interaction.reply({
-                content: "Hráč úspěšně přidán",
+                content: "Hráč úspěšně odebrán",
                 ephemeral: true
             })
         }
