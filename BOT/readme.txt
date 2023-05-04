@@ -1,1 +1,2 @@
 xd
+opraveny chyby
