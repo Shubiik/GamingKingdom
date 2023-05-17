@@ -3,7 +3,7 @@ const {
     token
 } = process.env;
 const {
-    Client,
+    Client,c
     Collection,
     GatewayIntentBits,
 } = require("discord.js");
